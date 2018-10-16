@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password: "password",
+  password: "root",
   database: "bamazon"
 });
 
@@ -42,7 +42,7 @@ function cxitems(inventory) {
     .then(function() {
 
       if (product) {
-      
+        console.log ("whats wrong")
         cxquanity(product);
       }
       else {
